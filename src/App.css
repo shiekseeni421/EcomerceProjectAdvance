@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .card{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 350px;
+    width: 250px;
+    border-radius: 4px;
+    margin: 5px;
+  }
+
+  .imgStyle{
+    height: 50%;
+    width: 100%;
+  }
+
+  .prizeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addButton{
+    background-color: rgb(64, 64, 210);
+    border: none;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  .prize{
+    color: rgba(136, 130, 130, 0.91);
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .navigation{
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 25px;
+  }
+
+  .navigation button{
+    margin-left: 15px;
+    padding: 5px 15px;
+    border: none;
+    box-shadow: 0 0 3px #000000;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #ffffff;
+  }
+
+  .navigation button :hover{
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .top_bar{
+    margin: 10px;
+  }
+
+  .button_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .remove_button{
+    background-color: red;
+    border: none;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+
+  }
+
+  .cartItemContainer{
+    display: flex;
+    align-items: center;
+  }
+
+  .itemContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  }
+
