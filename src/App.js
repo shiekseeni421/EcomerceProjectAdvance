@@ -1,12 +1,12 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
+import { CategoryPage } from "./pages/CategoryPage";
 import { Store } from "./pages/Store";
 import { NavBar } from "./components/NavBar";
 import { ShopingProvider } from "./context/ShopingCartContext";
 import { ShopingCartItem } from "./components/ShopingCartItem";
+import { ViewAllProjects } from "./components/ViewAllProjects";
 
 function App() {
   return (
@@ -14,16 +14,17 @@ function App() {
       <NavBar />
       <Container className="mb-4">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/category" element={<CategoryPage />}></Route>
         </Routes>
         <Routes>
           <Route path="/Store" element={<Store />}></Route>
         </Routes>
         <Routes>
-          <Route path="/ItemCart" element={<ShopingCartItem />}></Route>
+          <Route path="/addCart" element={<ShopingCartItem />}></Route>
+        </Routes>
+
+        <Routes>
+          <Route path="/" element={<ViewAllProjects />}></Route>
         </Routes>
       </Container>
     </ShopingProvider>

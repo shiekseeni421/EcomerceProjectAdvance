@@ -5,15 +5,16 @@
 
   .card{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    height: 350px;
     width: 250px;
     border-radius: 4px;
-    margin: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+    height: 300px;
   }
 
   .imgStyle{
-    height: 50%;
-    width: 100%;
+    height: 260px;
+    object-fit: cover;
   }
 
   .prizeContainer{
@@ -31,12 +32,14 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .prize{
     color: rgba(136, 130, 130, 0.91);
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 20px;
+    text-align: center;
   }
 
   .cardContainer{
@@ -103,6 +106,38 @@
     justify-content: space-between;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
 
+
+  .navbarEl{
+    color: #000 !important;
+    text-transform: capitalize !important;
+    font-size: 18px !important;
+  }
+
+  .ItemName{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+
+  .cart_Button{
+    background-color: #ffffff !important;
+  }
+
+  .viewAllProject{
+    background-color: #198754;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .ViewAllContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
 

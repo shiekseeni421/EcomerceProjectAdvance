@@ -3,7 +3,6 @@ import "../App.css";
 import { UseShopingContext } from "../context/ShopingCartContext";
 function StoreItems(props) {
   let { id, Name, Prize, ImgUrl } = props;
-
   const { getItemQnty, decrementCart, removeCart, onAdd } = UseShopingContext();
   let stockItem = getItemQnty(id);
   return (
@@ -11,8 +10,8 @@ function StoreItems(props) {
       <div className="card">
         <img src={ImgUrl} className="imgStyle" alt="shopingImg" />
         <div className="prizeContainer">
-          <h1>{Name}</h1>
-          <p className="prize">Prize:{Prize}</p>
+          <h5 className="ItemName">{Name}</h5>
+          <p className="prize">Prize: ₹{Prize}</p>
         </div>
         <div className="button_container">
           {stockItem === 0 ? (
