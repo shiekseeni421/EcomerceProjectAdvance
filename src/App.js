@@ -1,6 +1,5 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Container } from "react-bootstrap";
 import { CategoryPage } from "./pages/CategoryPage";
 import { Store } from "./pages/Store";
 import { NavBar } from "./components/NavBar";
@@ -13,7 +12,7 @@ function App() {
   return (
     <ShopingProvider>
       <NavBar />
-      <Container className="mb-4">
+      <div className="mb-4">
         <Routes>
           <Route path="/category" element={<CategoryPage />}></Route>
         </Routes>
@@ -27,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ViewAllProjects />}></Route>
         </Routes>
-      </Container>
+      </div>
     </ShopingProvider>
   );
 }
