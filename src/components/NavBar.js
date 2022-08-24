@@ -1,6 +1,5 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { UseShopingContext } from "../context/ShopingCartContext";
 import "../App.css";
 
@@ -21,12 +20,12 @@ export function NavBar() {
   return (
     <div className="bg-gray-200 flex justify-between items-center p-2 ">
       <div>
-        <Nav.Link to="/category" as={NavLink} className=" text-2xl px-1">
+        <Link to="/category" as={NavLink} className=" text-2xl px-1">
           CateGory
-        </Nav.Link>
-        <Nav.Link to="/store" as={NavLink} className="text-2xl px-1">
+        </Link>
+        <Link to="/store" as={NavLink} className="text-2xl px-1">
           All Items
-        </Nav.Link>
+        </Link>
       </div>
       <button
         onClick={cartQuantity > 0 ? routeChange : routeChangetoViewAllPage}
