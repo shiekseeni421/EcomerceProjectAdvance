@@ -1,8 +1,5 @@
 import React from "react";
 import { UseShopingContext } from "../context/ShopingCartContext";
-import { Button } from "react-bootstrap";
-
-import "../App.css";
 
 export function CartItem({ id, quantity }) {
   let { removeCart } = UseShopingContext();
@@ -40,40 +37,26 @@ export function CartItem({ id, quantity }) {
   const item = DataArray.find((i) => i.id === id);
   if (item == null) return null;
   return (
-    <div className="itemContainer">
-      <div className="cartItemContainer">
-        <img
-          src={item.imgUrl}
-          style={{
-            width: "125px",
-            height: "75px",
-            objectFit: "cover",
-            marginRight: "10px",
-          }}
-          alt="img"
-        />
-        <div className="me-auto">
+    <div className="flex justify-between items-center p-2">
+      <div className="flex items-center">
+        <img src={item.imgUrl} className="w-40 h-40 mx-5" alt="img" />
+        <div>
           <div>
             Item Count
             {quantity > 0 && (
-              <span className="text-muted" style={{ fontSize: ".65rem" }}>
-                x{quantity}
-              </span>
+              <span className="text-sm text-gray-500">x{quantity}</span>
             )}
           </div>
-          <div className="text-muted" style={{ fontSize: ".75rem" }}>
-            Prize:{item.ProductPrize}
-          </div>
+          <div className="text-xs text-gray-500">Prize:{item.ProductPrize}</div>
           <div>Total: {item.ProductPrize * quantity}</div>
         </div>
       </div>
-      <Button
-        variant="outline-danger"
-        size="sm"
+      <button
+        className="text-white bg-red-700 h-10 w-10 rounded-full"
         onClick={() => removeCart(item.id)}
       >
         &times;
-      </Button>
+      </button>
     </div>
   );
 }

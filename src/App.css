@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     padding: 0px;
     margin: 0px;
@@ -5,11 +9,11 @@
 
   .card{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    width: 250px;
+    /* width: 250px;
     border-radius: 4px;
     margin: 10px;
     box-sizing: border-box;
-    height: 300px;
+    height: 300px; */
   }
 
   .imgStyle{
@@ -17,12 +21,12 @@
     object-fit: cover;
   }
 
-  .prizeContainer{
+  /* .prizeContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   .addButton{
     background-color: rgb(64, 64, 210);
@@ -48,8 +52,6 @@
     align-items: center;
     justify-content: center;
   }
-
-
   .navigation{
     height: 100px;
     display: flex;
@@ -57,7 +59,6 @@
     align-items: center;
     padding: 0px 25px;
   }
-
   .navigation button{
     margin-left: 15px;
     padding: 5px 15px;
@@ -95,11 +96,6 @@
 
   }
 
-  .cartItemContainer{
-    display: flex;
-    align-items: center;
-  }
-
   .itemContainer{
     display: flex;
     align-items: center;
@@ -108,21 +104,10 @@
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
 
-
-  .navbarEl{
-    color: #000 !important;
-    text-transform: capitalize !important;
-    font-size: 18px !important;
-  }
-
   .ItemName{
     text-align: center;
     margin-top: 20px;
     font-weight: 400;
-  }
-
-  .cart_Button{
-    background-color: #ffffff !important;
   }
 
   .viewAllProject{

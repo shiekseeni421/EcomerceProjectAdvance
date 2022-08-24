@@ -7,20 +7,26 @@ function StoreItems(props) {
   let stockItem = getItemQnty(id);
   return (
     <>
-      <div className="card">
-        <img src={ImgUrl} className="imgStyle" alt="shopingImg" />
-        <div className="prizeContainer">
+      <div className="card  w-64 m-2">
+        <img src={ImgUrl} className="object-cover w-full" alt="shopingImg" />
+        <div className="flex-col items-center justify-center  p-2">
           <h5 className="ItemName">{Name}</h5>
           <p className="prize">Prize: ₹{Prize}</p>
         </div>
         <div className="button_container">
           {stockItem === 0 ? (
-            <button className="addButton" onClick={() => onAdd(id)}>
+            <button
+              className=" bg-blue-500 border-0 p-3 cursor-pointer mb-2 mt-2 text-white rounded-2"
+              onClick={() => onAdd(id)}
+            >
               + Add Cart
             </button>
           ) : (
-            <div className="d-flex align-items-center flex-column">
-              <div className="button_container" style={{ gap: "0.5rem" }}>
+            <div className="flex-col items-center">
+              <div
+                className="flex items-center justify-center "
+                style={{ gap: "0.5rem" }}
+              >
                 <button className="addButton" onClick={() => onAdd(id)}>
                   +
                 </button>
@@ -29,7 +35,10 @@ function StoreItems(props) {
                   -
                 </button>
               </div>
-              <button className="remove_button" onClick={() => removeCart(id)}>
+              <button
+                className="remove_button mx-48"
+                onClick={() => removeCart(id)}
+              >
                 Remove
               </button>
             </div>

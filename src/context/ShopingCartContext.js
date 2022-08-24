@@ -40,6 +40,7 @@ export function ShopingProvider({ children }) {
     } else {
       setCartItem([...cartItem, { id, quantity: 1 }]);
     }
+    return true;
   }
 
   function decrementCart(id) {

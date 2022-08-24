@@ -34,7 +34,7 @@ export function Store() {
   ];
 
   return (
-    <div className="cardContainer">
+    <div className="flex justify-center items-center flex-wrap">
       {DataArray.map((item, key) => {
         return (
           <StoreItems

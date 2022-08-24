@@ -7,6 +7,7 @@ import { NavBar } from "./components/NavBar";
 import { ShopingProvider } from "./context/ShopingCartContext";
 import { ShopingCartItem } from "./components/ShopingCartItem";
 import { ViewAllProjects } from "./components/ViewAllProjects";
+import { UseShopingContext } from "./context/ShopingCartContext";
 
 function App() {
   return (
