@@ -1,5 +1,6 @@
 import React from "react";
 import { UseShopingContext } from "../context/ShopingCartContext";
+import "../tailwind.css";
 
 export function CartItem({ id, quantity }) {
   let { removeCart } = UseShopingContext();

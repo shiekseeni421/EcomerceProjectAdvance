@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { UseShopingContext } from "../context/ShopingCartContext";
-import "../App.css";
+import "../tailwind.css";
 
 export function NavBar() {
   const { cartQuantity } = UseShopingContext();
@@ -29,9 +29,7 @@ export function NavBar() {
       </div>
       <button
         onClick={cartQuantity > 0 ? routeChange : routeChangetoViewAllPage}
-        style={{ width: "3rem", height: "3rem", position: "relative" }}
-        variant="outline"
-        className="bg-white"
+        className="relative w-12 h-12 bg-white m-2 p-2 border-none"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +40,7 @@ export function NavBar() {
         </svg>
 
         <div
-          className="rounded-full bg-red-700 d-flex content-center items-center w-5 h-5 absolute right-0 bottom-10 text-white"
+          className=" bg-red-700 text-white rounded-full h-6 w-6 flex items-center justify-center absolute right-0 top-0"
           style={{
             transform: "translate(25%, 25%)",
           }}

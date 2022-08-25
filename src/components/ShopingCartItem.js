@@ -1,6 +1,7 @@
 import React from "react";
 import { UseShopingContext } from "../context/ShopingCartContext";
 import { CartItem } from "./CartItem";
+import "../tailwind.css";
 
 export function ShopingCartItem({ isOpen }) {
   const { closeCart, cartItem } = UseShopingContext();
@@ -40,7 +41,7 @@ export function ShopingCartItem({ isOpen }) {
         <CartItem key={item.id} {...item} />
       ))}
 
-      <div className="ms-auto fw-bold fs-5">
+      <div className="text-lg font-bold">
         Total{" "}
         {cartItem.reduce((total, cartItems) => {
           const item = DataArray.find((i) => i.id === cartItems.id);

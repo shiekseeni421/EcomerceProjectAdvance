@@ -1,4 +1,3 @@
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { CategoryPage } from "./pages/CategoryPage";
 import { Store } from "./pages/Store";
@@ -7,6 +6,7 @@ import { ShopingProvider } from "./context/ShopingCartContext";
 import { ShopingCartItem } from "./components/ShopingCartItem";
 import { ViewAllProjects } from "./components/ViewAllProjects";
 import { UseShopingContext } from "./context/ShopingCartContext";
+import "./tailwind.css";
 
 function App() {
   return (
